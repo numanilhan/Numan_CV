@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numan Ilhan - CV en ligne</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcN9jQOZoB8XVjhgNTCwKE8O5+2qyxWED5d+dr2Gjq9lG3y5T6P9kM5gt8l5Nf5rjowY84X1lKBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,6 +61,11 @@
             border-bottom: 2px solid #00509e; /* bleu clair */
             padding-bottom: 10px;
             color: #003366; /* bleu foncé */
+            display: flex;
+            align-items: center;
+        }
+        section h2 i {
+            margin-right: 10px;
         }
         footer {
             background: #003366; /* bleu foncé */
@@ -76,6 +83,11 @@
             margin: 5px 0;
             padding: 10px;
             border-left: 5px solid #00509e; /* bleu clair */
+            display: flex;
+            align-items: center;
+        }
+        .skills ul li i {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -95,7 +107,7 @@
     </header>
 
     <section id="parcours" class="container">
-        <h2>Mon Parcours</h2>
+        <h2><i class="fas fa-briefcase"></i>Mon Parcours</h2>
         <div>
             <h3>Autorem à Bussy Saint Martin (juil. 2022)</h3>
             <p>Automaticien - Étude et mise en service des processus de climatisation, chauffage et ventilation. Collaboration avec les constructeurs : Distech Controls, TREND, ALC…</p>
@@ -111,7 +123,7 @@
     </section>
 
     <section id="formations" class="container">
-        <h2>Mes Formations</h2>
+        <h2><i class="fas fa-graduation-cap"></i>Mes Formations</h2>
         <div>
             <h3>AFPA à Magnanville - 78 (sept. 2021 à juin 2022)</h3>
             <p>Technicien Supérieur en Automatisme et Informatique Industriel</p>
@@ -127,19 +139,19 @@
     </section>
 
     <section id="competences" class="container">
-        <h2>Mes Compétences</h2>
+        <h2><i class="fas fa-cogs"></i>Mes Compétences</h2>
         <div class="skills">
             <ul>
-                <li>Lecture de dessins techniques : ★ ★ ★ ★</li>
-                <li>Électromécanique : ★ ★ ★</li>
-                <li>Électrotechnique : ★ ★ ★</li>
-                <li>Informatique industrielle : ★ ★ ★</li>
+                <li><i class="fas fa-drafting-compass"></i>Lecture de dessins techniques : ★ ★ ★ ★</li>
+                <li><i class="fas fa-tools"></i>Électromécanique : ★ ★ ★</li>
+                <li><i class="fas fa-bolt"></i>Électrotechnique : ★ ★ ★</li>
+                <li><i class="fas fa-laptop-code"></i>Informatique industrielle : ★ ★ ★</li>
             </ul>
         </div>
     </section>
 
     <section id="interets" class="container">
-        <h2>Mes Centres d'intérêt</h2>
+        <h2><i class="fas fa-heart"></i>Mes Centres d'intérêt</h2>
         <p>Sudoko, basketball, voyages, développement personnel</p>
     </section>
 
