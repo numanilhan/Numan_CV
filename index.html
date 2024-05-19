@@ -6,69 +6,78 @@
     <title>Numan Ilhan - CV en ligne</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 20px;
         }
         header {
-            background: #35424a;
+            background: #4CAF50;
             color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            padding: 20px 0;
+            text-align: center;
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        header ul {
+        nav ul {
             padding: 0;
             list-style: none;
+            text-align: center;
         }
-        header li {
+        nav ul li {
             display: inline;
-            padding: 0 20px 0 20px;
+            margin: 0 10px;
         }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
         }
         section {
-            padding: 20px;
+            background: #ffffff;
             margin: 20px 0;
-            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            color: #4CAF50;
         }
         footer {
-            background: #35424a;
+            background: #4CAF50;
             color: #ffffff;
             text-align: center;
-            padding: 30px 0;
-            margin-top: 30px;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Numan Ilhan</h1>
-            </div>
+            <h1>Numan Ilhan</h1>
             <nav>
                 <ul>
                     <li><a href="#parcours">Parcours</a></li>
@@ -80,33 +89,41 @@
         </div>
     </header>
 
-    <section id="parcours">
-        <div class="container">
-            <h2>Mon Parcours</h2>
+    <section id="parcours" class="container">
+        <h2>Mon Parcours</h2>
+        <div>
             <h3>Autorem à Bussy Saint Martin (juil. 2022)</h3>
             <p>Automaticien - Étude et mise en service des processus de climatisation, chauffage et ventilation. Collaboration avec les constructeurs : Distech Controls, TREND, ALC…</p>
+        </div>
+        <div>
             <h3>RATP à Paris - 75 (août 2016)</h3>
             <p>Opérateur Qualifié - Maintenance préventive et curative sur tous les équipements du métier Electricité/Électromécanique/Pneumatique. Rechercher les défectuosités des systèmes électromécaniques et pneumatiques. Optimiser la durée de vie et la pérennité des équipements industriels. Rendre compte immédiatement à l'encadrement des aléas constatés. Enregistrer les activités de maintenance papier et dans l'outil informatique.</p>
+        </div>
+        <div>
             <h3>RATP à Paris - 75 (sept. 2014 à août 2016)</h3>
             <p>Apprenti - Opérateur Qualifié</p>
         </div>
     </section>
 
-    <section id="formations">
-        <div class="container">
-            <h2>Mes Formations</h2>
+    <section id="formations" class="container">
+        <h2>Mes Formations</h2>
+        <div>
             <h3>AFPA à Magnanville - 78 (sept. 2021 à juin 2022)</h3>
             <p>Technicien Supérieur en Automatisme et Informatique Industriel</p>
+        </div>
+        <div>
             <h3>DORIAN à Paris Nation - 75 (sept. 2014 à juil. 2016)</h3>
             <p>Baccalauréat professionnel Maintenance des Équipements Industriels</p>
+        </div>
+        <div>
             <h3>Lycée Clément Ader à Tournant en Brie - 77 (sept. 2012 à juil. 2014)</h3>
             <p>BEP Maintenance des Équipements Industriels</p>
         </div>
     </section>
 
-    <section id="competences">
-        <div class="container">
-            <h2>Mes Compétences</h2>
+    <section id="competences" class="container">
+        <h2>Mes Compétences</h2>
+        <div class="skills">
             <ul>
                 <li>Lecture de dessins techniques : ★ ★ ★ ★</li>
                 <li>Électromécanique : ★ ★ ★</li>
@@ -116,19 +133,13 @@
         </div>
     </section>
 
-    <section id="interets">
-        <div class="container">
-            <h2>Mes Centres d'intérêt</h2>
-            <p>Sudoko, basketball, voyages, développement personnel</p>
-        </div>
+    <section id="interets" class="container">
+        <h2>Mes Centres d'intérêt</h2>
+        <p>Sudoko, basketball, voyages, développement personnel</p>
     </section>
 
     <footer>
-        <div class="container">
-            <p>Adresse : 7 Rue du Grand Noyer, 77170 Brie Comte Robert</p>
-            <p>Téléphone : 06 – 07 – 59 – 08 – 72</p>
-            <p>Email : numanilhan2977@gmail.com</p>
-        </div>
+        <p>Adresse : 7 Rue du Grand Noyer, 77170 Brie Comte Robert | Téléphone : 06 – 07 – 59 – 08 – 72 | Email : numanilhan2977@gmail.com</p>
     </footer>
 </body>
 </html>
